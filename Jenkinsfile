@@ -72,7 +72,7 @@ pipeline{
                }
             }
         }
-        stage('Artifact upload : Jforg'){
+        stage('Artifact upload : Jfrog'){
          when { expression {  params.action == 'create' } }
             steps{
                 script{
