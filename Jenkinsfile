@@ -78,7 +78,7 @@ pipeline{
                 script{
 
                     mvn clean install -DskipTests
-                    curl -X PUT -u admin:Kranti@123 -T kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar http://<EC2IP>:8082/artifactory/example-repo-local/
+                    curl -X PUT -u admin:Kranti@123 -T kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar http://3.87.194.103:8082/artifactory/example-repo-local/
 
                 }
             }
