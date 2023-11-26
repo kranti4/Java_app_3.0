@@ -77,7 +77,8 @@ pipeline{
             steps{
                script{
 
-                   jforg()                   
+                   
+                   sh "curl -X PUT -u admin:password -T chown Jenkins:Jenkins /var/lib/jenkins/workspace/java/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar http://34.207.211.161:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar"                 
                }
             }
         }
