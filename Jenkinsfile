@@ -77,7 +77,7 @@ pipeline{
             steps{
                script{
                    
-                     sh "curl -X PUT -u admin:password -T /var/lib/jenkins/workspace/java/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar http://184.73.11.35:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar"
+                     sh "curl -X PUT -u admin:password -T /var/lib/jenkins/workspace/java/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar http://34.207.211.161:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar"
                }
             }
         }
